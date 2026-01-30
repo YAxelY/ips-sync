@@ -1,5 +1,5 @@
 #opt
-n_epoch: 150          # number of epochs
+n_epoch: 25          # number of epochs
 B: 16                 # batch size
 B_seq: 16             # sequential batch size, set either to
                       # B (eager and lazy loading) or 1 (eager sequential loading)
@@ -10,15 +10,15 @@ wd: 0.1               # weight decay
 #dset
 n_class: 10                                                   # number of classes
 data_dir: 'data/megapixel_mnist/dsets/megapixel_mnist_1500'   # directory of dataset
-n_worker: 8                                                   # number of workers
+n_worker: 2                                                   # number of workers
 pin_memory: True                                              # use pin memory in dataloader
 eager: True                                                   # eager or lazy loading
 
 #misc
 eps: 0.000001
 seed: 0
-track_efficiency: False   # for training, needs to be False
-track_epoch: 0            # only relevant if efficiency stats are tracked.
+track_efficiency: True   # for training, needs to be False
+track_epoch: 25            # only relevant if efficiency stats are tracked.
 
 #enc
 is_image: True          # should a convolutional patch encoder be used?
