@@ -1,5 +1,5 @@
 #opt
-n_epoch: 25          # number of epochs
+n_epoch: 10          # number of epochs
 B: 16                 # batch size
 B_seq: 16             # sequential batch size, set either to
                       # B (eager and lazy loading) or 1 (eager sequential loading)
@@ -18,7 +18,7 @@ eager: True                                                   # eager or lazy lo
 eps: 0.000001
 seed: 0
 track_efficiency: True   # for training, needs to be False
-track_epoch: 25            # only relevant if efficiency stats are tracked.
+track_epoch: 10            # only relevant if efficiency stats are tracked.
 
 #enc
 is_image: True          # should a convolutional patch encoder be used?
